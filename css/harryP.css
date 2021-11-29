@@ -1,0 +1,115 @@
+body{
+    position: relative;
+    margin: 0;
+}
+
+
+/*Background Image */
+.mainDiv {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-image: url(../images/uhh.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+/* Title */
+.logo{
+    padding: 0;
+    height: 200px;
+    position: absolute;
+    left: 30%;
+}
+
+
+.ron {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+/*Animations */
+.owl {
+    position: fixed;
+    top: 25%;
+    left: 0;
+    animation: fly linear 8s infinite;
+}
+
+.harryBroom {
+    position: fixed;
+    top: 35%;
+    right: 0;
+    height: 150px;
+    animation: broomFly linear 8s infinite;
+}
+
+.spell {
+    position: fixed;
+    bottom: 10%;
+    left: 10%;
+    border: solid green 2px;
+    height: 10px;
+    width: 35px;
+    border-radius: 15px;
+    background-color: green;
+    transition: transform 1s;
+    visibility: hidden;
+}
+
+.deatheater {
+    position: fixed;
+    bottom: 0;
+    left: 20%;
+    height: 250px;
+}
+
+.hermonie {
+    position: fixed;
+    bottom: 5%;
+    right: 20%;
+    height: 250px;
+}
+
+
+
+.ron:hover + .spell{
+    visibility: visible;
+    transform: translateX(16vw);
+}
+
+
+
+
+
+
+
+/*Keyframes*/
+
+@keyframes fly {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(100vw);
+    }
+
+}
+
+@keyframes broomFly {
+    100%{
+        transform: translateX(-100vw);
+    }
+}
+
+
+
+
+
+
+
